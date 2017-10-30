@@ -28,7 +28,7 @@ if (! function_exists('tenant_connect')) {
         // Rearrange the connection data
         DB::reconnect('tenant');
 
-        // Ping the database. This will thrown an exception in case the database does not exists.
+        // Ping the database. This will throw an exception in case the database does not exists.
         Schema::connection('tenant')->getConnection()->reconnect();
     }
 }
